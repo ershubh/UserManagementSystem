@@ -1,12 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>User Managment System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=<1.0>">
+    <title>User Managment System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../html/css/style.css">
 </head>
 <body>
-    <!-- Header Section for displaying title -->
+    <!-- Header Section -->
     <header id="header">
         <nav>   
             <div class="container">
@@ -18,46 +21,42 @@
             </div>   
         </nav>
     </header>
-
-    <!-- Main body -->
-    <main id="site-main">
-        <div class="container"> 
-            <div class="box-nav d-flex-justify-between">    
-                <a href="/add-user" class="border-shadow">
-                 <span class="text-gradient">New User <i class="fa-solid fa-user"></i></span>
-                </a>
-            </div>
-            <!-- Form to display all the information -->
-            <Form action="/" method="post">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Gender</th>
-                            <th>Status</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <!-- Body for table created where javascript will ad the user -->
-                    <tbody>
-                        <td>1</td>
-                        <td>Username</td>
-                        <td>example@gmail.com</td>
-                        <td>Male</td>
-                        <td>Active</td>
-                        <td>
-                            <a href="#" class="btn border-shadow update">
-                            <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span></a>
-                            <a  class="btn border-shadow delete">
-                            <span class="text-gradient"><i class="fas fa-times"></i></span></a>
-                        </td>
-                    </tbody>
-                    </table>
-                    </Form>
-            </div>
-
-    </main>
+<!-- Main section -->
+<main id="site-main">
+<div class="container"> 
+    <div class="box-nav d-flex-justify-between">    
+        <a href="/add-user" class="border-shadow">
+         <span class="text-gradient">New User <i class="fa-solid fa-user"></i></span>
+        </a>
+    </div>
+    <Form action="/" method="post">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <td>1</td>
+                <td>Username</td>
+                <td>example@gmail.com</td>
+                <td>Male</td>
+                <td>Active</td>
+                <td>
+                    <a href="#" class="btn border-shadow update">
+                    <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span></a>
+                    <a  class="btn border-shadow delete">
+                    <span class="text-gradient"><i class="fas fa-times"></i></span></a>
+                </td>
+            </tbody>
+        </table>
+    </Form>
+</div>
+</main>
 </body>
 </html>

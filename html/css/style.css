@@ -39,7 +39,14 @@ a
 {
     justify-content: space-between;
 }
+/* Centralized the text where text-center class used */
 .text-center
 {
     text-align: center;
+}
+/* To define the box shadow for the button */
+.border-shadow
+{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
 }

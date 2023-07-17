@@ -28,3 +28,13 @@ a
     font-weight: bolder;
     text-decoration: underline;
 }
+/* Style the d-flex and its component */
+.d-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-between
+{
+    justify-content: space-between;
+}

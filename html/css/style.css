@@ -16,3 +16,15 @@ a
 {
     text-decoration: none;
 }
+/* To defining the styling for the container class generally for titles */
+.container
+{
+    max-width: 1024px;
+    margin:auto;
+}
+.nav-brand
+{
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+}

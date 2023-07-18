@@ -13,3 +13,11 @@ app.use('/css',express.static(path.resolve(__dirname,'html/css')));
 app.use('/img',express.static(path.resolve(__dirname,'html/img')));
 app.use('/js',express.static(path.resolve(__dirname,'html/js')));
 
+//set the express to use views folder for ejs
+app.set('view engine','ejs');
+
+//ports defined
+const port=process.env.PORT || 80;
+
+//Start the server on the some port
+app.listen(port,()=>{console.log(`Server is running on port:${port}`)});

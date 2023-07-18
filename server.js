@@ -13,6 +13,9 @@ app.use('/css',express.static(path.resolve(__dirname,'html/css')));
 app.use('/img',express.static(path.resolve(__dirname,'html/img')));
 app.use('/js',express.static(path.resolve(__dirname,'html/js')));
 
+//setup the configuration file
+module.exports.dotenv_path=dotenv.config({path:'config.env'});
+
 //set the express to use views folder for ejs
 app.set('view engine','ejs');
 

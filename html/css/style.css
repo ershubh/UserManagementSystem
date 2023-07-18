@@ -71,3 +71,23 @@ color:var(--light);
     background-clip: text;
     --webkit-text-fill-color:transparent;
 }
+/* Header title bar styling  */
+#header nav
+{
+    background-color:aquamarine;
+    padding: 1em 0;
+    width: 100%;
+}
+#site-main
+{
+    margin-top: 6em;
+}
+#site-main .container .box-nav>a
+{
+    font-size: 1em;
+    padding:.5em 1em;
+}
+#site-main .container form
+{
+    margin: 2em 0;
+}

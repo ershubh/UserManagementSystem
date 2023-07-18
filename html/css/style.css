@@ -160,3 +160,17 @@ width: 100%;
     max-width: 786px;
     margin: auto;
 }
+#update_user .form-group,#add_user .form-group
+{
+    margin: .4em 0;
+}
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"]
+{
+    width: 100%;
+    padding:.6em 1em;
+    margin:.5em 0;
+    border: 1px solid var(--border);
+    font-size: 1em;
+    border-radius: .2em;
+}

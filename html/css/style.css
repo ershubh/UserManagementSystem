@@ -178,3 +178,9 @@ width: 100%;
 {
     margin: 1em 2em;
 }
+/* Styling the radio button */
+.radio input[type='radio']
+{
+    position:absolute;
+    opacity:0;
+}

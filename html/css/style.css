@@ -123,3 +123,16 @@ width: 100%;
     background-color: var(--dark);
     border-color: #32383e;
 }
+/* To create responsive website */
+@media only screen and (max-width:1024px) {
+    table,thead,tbody,th,tr,td
+    {
+        display:block;
+    }
+    thead tr
+    {
+        position: absolute;
+        top:-9999px;
+        left:-9999px;
+    }
+}

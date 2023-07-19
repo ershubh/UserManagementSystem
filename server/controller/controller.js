@@ -38,3 +38,20 @@ const find=(req,res)=>{
     }
   
 }
+//to update the specified user
+const update=(req,res)=>{
+    if(!req.body)
+    {
+       return res.status(500).send('Data cannot be empty');
+    } 
+   const id=req.params.id;
+   userDb.findByIdAndUpdate(id,req.body).then(data=>{
+       if(!data)
+       {
+        res.send(`cannot update with ${id} May be user not found!`);
+       }
+       else
+       {
+           res.send(data);
+       }
+   }).catch(e=>res.status(500).send('error update user information'));}

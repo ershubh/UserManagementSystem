@@ -55,3 +55,18 @@ const update=(req,res)=>{
            res.send(data);
        }
    }).catch(e=>res.status(500).send('error update user information'));}
+   //to delete the specified user
+const delet=(req,res)=>{
+    //Find the id from url 
+    const id=req.params.id;
+
+    userDb.findByIdAndDelete(id).then((data)=>{
+    if(!data)
+    {
+        res.status(404).send('data cant be delete.May id is wrong');
+    }
+    else
+    {
+        res.send('Id has been deleted');
+    }}).catch(e=>res.send(e));
+}

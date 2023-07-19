@@ -2,7 +2,6 @@ const express=require('express');
 const app=express();
 const dotenv=require('dotenv');
 const bodyparser=require('body-parser');
-const morgan=require('morgan');
 const path=require('path');
 const connectDb=require('./server/databases/connection');
 
@@ -11,7 +10,6 @@ app.use(bodyparser.urlencoded({extended:true}));
 
 connectDb;
 app.use('/',require('./server/routes/router'));
-app.use(morgan('tiny'));
 app.use('/css',express.static(path.resolve(__dirname,'html/css')));
 app.use('/img',express.static(path.resolve(__dirname,'html/img')));
 app.use('/js',express.static(path.resolve(__dirname,'html/js')));

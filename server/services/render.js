@@ -16,5 +16,6 @@ const update_user=(req,res)=>{
     .then((data)=>{
      res.render('update_user',{user:data.data})}).catch(e=>res.send(e));
 }
+
 //Export the module variables
 module.exports= {homeroutes, add_user, update_user};

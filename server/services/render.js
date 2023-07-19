@@ -10,4 +10,6 @@ const add_user=(req,res)=>{
 const update_user=(req,res)=>{
     res.render('update_user');
 }
+
+//export the module variables
 module.exports= {homeroutes, add_user, update_user};

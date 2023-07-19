@@ -9,3 +9,10 @@ const homeroutes=(req,res)=>{
 const add_user=(req,res)=>{
     res.render('new_User');
 }
+// create a service to render update_User page
+const update_user=(req,res)=>{
+    // res.render('update_user');
+    axios.get('http://localhost:8000/api/users',{params:{id:req.query.id}})
+    .then((data)=>{
+     res.render('update_user',{user:data.data})}).catch(e=>res.send(e));
+}

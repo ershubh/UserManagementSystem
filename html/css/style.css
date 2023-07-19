@@ -5,7 +5,6 @@
     --border:#dee2e6;
     --border-btn:#edf2f4;
 }
-
 *
 {
     margin: 0;
@@ -16,7 +15,6 @@ a
 {
     text-decoration: none;
 }
-/* To defining the styling for the container class generally for titles */
 .container
 {
     max-width: 1024px;
@@ -28,8 +26,6 @@ a
     font-weight: bolder;
     text-decoration: underline;
 }
-/* Styling of icon and the main title*/
-
 .d-flex
 {
     display: flex;
@@ -39,7 +35,6 @@ a
 {
     justify-content: space-between;
 }
-/* Centralized the text where text-center class used */
 .text-center
 {
     text-align: center;
@@ -50,7 +45,6 @@ a
     border: 1px solid var(--border-btn);
     box-shadow: 1px 3px 10px #e9ecef;
 }
-/* Defining the roots variable */
 .text-dark
 {
     color: var(--dark);
@@ -63,7 +57,6 @@ a
 {
 color:var(--light);
 }
-/* text gradient class defined */
 .text-gradient
 {
     background:linear-gradient(to right,#8e2de2,#4a00e0);
@@ -71,7 +64,8 @@ color:var(--light);
     background-clip: text;
     --webkit-text-fill-color:transparent;
 }
-/* Header title bar styling  */
+
+
 #header nav
 {
     background-color:aquamarine;
@@ -91,7 +85,6 @@ color:var(--light);
 {
     margin: 2em 0;
 }
-/* Table defined */
 table
 {
 border-spacing: 0;
@@ -123,7 +116,6 @@ width: 100%;
     background-color: var(--dark);
     border-color: #32383e;
 }
-/* To create responsive website */
 @media only screen and (max-width:1024px) {
     table,thead,tbody,th,tr,td
     {
@@ -146,7 +138,7 @@ width: 100%;
     }
 }
 
-/* * Add user styling */ */
+/* Add user styling */
 .form-title
 {
     margin-top: 2em;
@@ -178,6 +170,7 @@ width: 100%;
 {
     margin: 1em 2em;
 }
+
 /* Styling the radio button */
 .radio input[type='radio']
 {
@@ -217,8 +210,6 @@ width: 100%;
     background:#b4b4b4;
     box-shadow: inset 0 0 0 4px #e9ecef;
 }
-
-/* Update user and add user added */
 #update_user .form-group .btn,
 #add_user .form-group .btn
 {

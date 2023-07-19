@@ -20,3 +20,4 @@ route.put('/api/users/:id',controller.update);
 route.delete('/api/users/:id',controller.delet);
 
 module.exports=route;
+

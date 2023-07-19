@@ -9,7 +9,7 @@ route.get('/add-user',services.add_user);
 route.get('/update-user', services.update_user);
 
 // API post to create users
-route.post('/api/users',(req,res)=>{res.send('work')});
+route.post('/api/users',controller.create);
 // API post to find the users
 route.get('/api/users',controller.find);
 // API post to update the specified users

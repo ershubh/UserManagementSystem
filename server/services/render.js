@@ -5,3 +5,7 @@ const homeroutes=(req,res)=>{
         console.log(resp.data);
         res.render('index',{users:resp.data})}).catch(e=>res.send(e));
 }
+// create a service to render new_User page
+const add_user=(req,res)=>{
+    res.render('new_User');
+}

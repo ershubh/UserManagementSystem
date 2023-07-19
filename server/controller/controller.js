@@ -16,3 +16,25 @@ const create=async (req,res)=>{
      status,
     }).then(data=>{ res.redirect('/add-user')}).catch(e=>console.log(e));
  }
+ //to find the specified user
+const find=(req,res)=>{
+    if(req.query.id)
+    {
+        const id=req.query.id;
+        userDb.findById(id).then(data=>{
+         if(!data)
+         {
+           res.send('Not found the user'+id);
+         }
+         else
+         {
+           res.send(data);
+         }})
+         .catch(e=>res.send("Error retrieving the data"));
+    }
+    else
+    {
+        userDb.find().then(usr=>res.send(usr)).catch(e=>res.status(500).send(e));
+    }
+  
+}

@@ -1,5 +1,7 @@
 const express=require('express');
 const route=express.Router();
+const controller=require('../controller/controller.js');
+const services=require('../services/render.js');
 
 // Route to connect to homepage
 route.get('/',services.homeroutes);

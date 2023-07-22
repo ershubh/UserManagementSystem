@@ -1,4 +1,5 @@
 const axios=require('axios');
+const userDb=require('../model/model.js');
 // create a service to render homepage
 const host='0.0.0.0';
 const homeroutes=(req,res)=>{

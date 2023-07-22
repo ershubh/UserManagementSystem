@@ -3,11 +3,11 @@ const userDb=require('../model/model.js');
 // create a service to render homepage
 const host='0.0.0.0';
 const homeroutes=(req,res)=>{
-    //axios.get('http://127.0.0.1:8000/api/users').then((resp)=>{
-      //  console.log(resp.data);
-        //res.render('index',{users:resp.data})}).catch(e=>res.send(e));
-     const db=userDb.find({}).then(data=>
-    res.render('index',{users:data}));
+    axios.get('http://user-management-system-6uxu.onrender.com/api/users').then((resp)=>{
+    console.log(resp.data);
+   res.render('index',{users:resp.data})}).catch(e=>res.send(e));
+     //const db=userDb.find({}).then(data=>
+    //res.render('index',{users:data}));
 }
 // create a service to render new_User page
 const add_user=(req,res)=>{

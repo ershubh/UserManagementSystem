@@ -16,7 +16,7 @@ const add_user=(req,res)=>{
 // create a service to render update_User page
 const update_user=(req,res)=>{
     // res.render('update_user');
-    axios.get('http://https://user-management-system-6uxu.onrender.com/api/users',{params:{id:req.query.id}})
+    axios.get('http://user-management-system-6uxu.onrender.com/api/users',{params:{id:req.query.id}})
     .then((data)=>{
      res.render('update_user',{user:data.data})}).catch(e=>res.send(e));
 }

@@ -12,7 +12,7 @@ $("#update_user").submit(function(event){
 
    console.log(data);
     var request = {
-        "url" : `http://localhost:8000/api/users/${data.id}`,
+        "url" : `http://user-management-system-6uxu.onrender.com/api/users/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -29,7 +29,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:8000/api/users/${id}`,
+            "url" : `user-management-system-6uxu.onrender.com/api/users/${id}`,
             "method" : "DELETE"
         }
 
